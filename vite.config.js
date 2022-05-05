@@ -19,7 +19,7 @@ const corsOptions = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "https://mlclon.netlify.app/",
+  base: "https://ignaciokang.github.io/mercadoLibreClon/",
   plugins: [react()],
   server: {
     cors: corsOptions,
