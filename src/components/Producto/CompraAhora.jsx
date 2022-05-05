@@ -83,10 +83,10 @@ const handleSubmit = (e) => {
     </div>
     <div>
       <a href='/carrito'>
-       <p className="w-full bg-CelesteML p-3 rounded-lg text-white font-semibold text-lg mb-2 cursor-pointer text-center">Comprar ahora</p>      
+       <p className="w-full bg-CelesteML p-3 rounded-lg text-white font-semibold text-lg mb-2 cursor-pointer text-center hover:bg-blue-400 ease-in transition-colors">Comprar ahora</p>      
       </a>
 
-      <input type="submit" value="Agregar al carrito" className="w-full bg-blue-100 p-3 rounded-lg text-CelesteML font-semibold text-lg mb-2 cursor-pointer"/>
+      <input type="submit" value="Agregar al carrito" className="w-full bg-blue-100 p-3 rounded-lg text-CelesteML font-semibold text-lg mb-2 cursor-pointer hover:bg-blue-200 ease-in transition-colors"/>
     </div>
     </form>
     <div className="flex text-gray-500 ">

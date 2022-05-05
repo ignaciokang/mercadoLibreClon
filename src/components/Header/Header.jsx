@@ -5,8 +5,11 @@ import { BiChevronDown, BiBell } from "react-icons/bi";
 import { BsCart2 } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import Carrito from "../Carrito/Carrito";
 
-const Header = () => {
+const Header = ({carro}) => {
+
+  
   return (
     <div className="bg-Amarillo h-[110px] py-4  text-gray-700 border-b-[1px] border-gray-300 ">
       <div className="w-4/5 mx-auto grid grid-rows-2">
@@ -74,7 +77,11 @@ const Header = () => {
             </li>
             <li className="text-xl">
               <Link to='/carrito'>
+                <div className="flex relative">
               <BsCart2 />
+              {carro.length > 0 ? (<span className="bg-red-500 h-2 w-2 rounded-full absolute top-0 right-0"> </span>
+): ''}
+                </div>
               </Link>
             </li>
           </ul>

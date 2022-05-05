@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer";
 import Carrito from "./components/Carrito/Carrito";
 import { useState, useEffect } from "react";
+import Aclaracion from "./components/Aclaracion";
 
 function App() {
   const [carro, setCarro] = useState([]);
@@ -49,10 +50,12 @@ function App() {
     setCarro(carritoActualizado);
   }
 
+
   return (
     <div className="bg-FondoGris">
       <Router>
-        <Header />
+        <Header carro={carro}/>
+        <Aclaracion/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />

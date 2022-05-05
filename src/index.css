@@ -10,35 +10,27 @@
 }
 
 .rightArrow{
-    width: 48px;
-    height: 48px;
     text-align: center;
     position: absolute;
-    background-color: white;
     opacity: 50%;
     top: 50%;
     right: 32px;
-    font-size: 2rem;
-    border-radius: 100%;   
     cursor: pointer;
-    user-select: none;
     z-index: 1;
+    font-size: 50px;
+    color: white
 }
 
 .leftArrow{
-    width: 48px;
-    height: 48px;
     text-align: center;
     position: absolute;
-    background-color: white;
     opacity: 50%;
     top: 50%;
     left: 32px;
-    font-size: 2rem;
-    border-radius: 100%;   
     cursor: pointer;
-    user-select: none;
     z-index: 1;
+    font-size: 50px;
+    color: white
 }
 
 .slider img {

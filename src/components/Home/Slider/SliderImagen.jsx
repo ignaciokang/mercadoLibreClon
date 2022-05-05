@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { SliderData } from "./SliderData";
+import {IoIosArrowDroprightCircle, IoIosArrowDropleftCircle} from 'react-icons/io'
 
 
 const SliderImagen = ({ slides }) => {
@@ -31,10 +32,10 @@ const SliderImagen = ({ slides }) => {
   return (
     <section className="slider overflow-hidden">
       <button type="button" className="rightArrow" onClick={SliderRight}>
-        {">"}
+        <IoIosArrowDroprightCircle/>
       </button>
       <button type="button" className="leftArrow" onClick={SliderLeft}>
-        {"<"}
+        <IoIosArrowDropleftCircle/>
       </button>
       {/* <div className="bg-white absolute bottom-16 z-10 w-16 p-2 rounded-xl flex justify-around left-0 right-0 mx-auto opacity-50">
       <button type="button" className="bg-black w-2 h-2 rounded-full" onClick={Slider1}>

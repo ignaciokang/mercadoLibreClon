@@ -1,7 +1,13 @@
+import { useParams } from "react-router-dom";
+
 const NotFound = () => {
+
+    const params = useParams();
+    console.log(params)
+
     return ( 
-        <div className="bg-fondolol w-full h-screen bg-repeat-y">
-            <h1 className="text-white">La página no existe.</h1>
+        <div className="h-screen flex justify-center">
+            <h1 className="text-gray-600 text-2xl pt-64">La página no existe.</h1>
         </div>
       );
 }

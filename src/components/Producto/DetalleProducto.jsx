@@ -1,12 +1,27 @@
 import React from "react";
-import { AiOutlineHeart, AiFillStar } from "react-icons/ai";
+import { AiOutlineHeart, AiFillStar, AiFillHeart } from "react-icons/ai";
+import {useState} from 'react'
 
 const DetalleProducto = ({prod}) => {
+
+  const [fav, setFav] = useState(false)
+
+  const favClick = () => {
+    if (fav === false) {
+      setFav(true)
+    } else {
+      setFav(false)
+    }
+  }
+
   return (
     <div className="p-4 space-y-2">
       <div className="flex justify-between">
         <p className="text-gray-500 my-auto">Nuevo | 30349 vendidos</p>
-        <AiOutlineHeart className="text-CelesteML text-3xl" />
+        <button onClick={favClick}>
+        {fav ? (<AiFillHeart className="text-CelesteML text-3xl" />) : ( <AiOutlineHeart className="text-CelesteML text-3xl" />)}
+
+        </button>
       </div>
       <h2 className="font-semibold text-2xl leading-tight">{prod.titulo}</h2>
       <div className="flex">
