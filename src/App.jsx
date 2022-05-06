@@ -57,14 +57,14 @@ function App() {
         <Header carro={carro}/>
         <Aclaracion/>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/mercadoLibreClon/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
           <Route
-            path="/producto/:id"
+            path="/mercadoLibreClon/producto/:id"
             element={<Producto agregarCarrito={agregarCarrito} />}
           />
           <Route
-            path="carrito"
+            path="/mercadoLibreClon/carrito"
             element={
               <Carrito
                 carro={carro}
