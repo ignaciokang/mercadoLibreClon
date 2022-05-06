@@ -53,7 +53,7 @@ function App() {
 
   return (
     <div className="bg-FondoGris">
-      <Router>
+      <Router basename="/mercadoLibreClon">
         <Header carro={carro}/>
         <Aclaracion/>
         <Routes>
