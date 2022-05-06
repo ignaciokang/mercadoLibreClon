@@ -7,13 +7,21 @@ const UltimaVisita = () => {
         <h2 className="my-6 text-2xl text-gray-500">Última Visita<button className="text-CelesteML text-[18px] ml-4">Ver más</button></h2>
         <div className="grid grid-cols-5 space-x-4">
 
-          {ListadoProductos.map((producto, id) => {
-                return(
-                  <MiniaturaProducto key={id} producto={producto}/>
-                )
-          })
+        {ListadoProductos.map((producto, index) => {
+            
+            return(
+              <div
+              >
+              {index <= 4 && (
+                <>
+                <MiniaturaProducto key={index} producto={producto}/>
+                </>
+              )}
+            </div>
+            )
+      })
 
-          }
+      }
         </div>
     </div>
   )

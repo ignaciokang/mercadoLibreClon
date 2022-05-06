@@ -35,7 +35,7 @@ const Carrito = ({ carro, setCarro, actualizarCantidad, eliminarProducto }) => {
           <div>
             {carro.map((producto) => {
               return (
-                <div>
+                <div className="grow">
                   <ProductosCarrito
                     producto={producto}
                     key={producto.id}

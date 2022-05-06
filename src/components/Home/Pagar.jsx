@@ -2,7 +2,7 @@ import images from "../../constants/images"
 
 const Pagar = () => {
   return (
-    <div className="bg-white py-16 ">
+    <div className="bg-white my-2 ">
         <div className="w-4/5 grid grid-cols-3 mx-auto">
             <div className="flex flex-col text-center p-6 justify-evenly space-y-2">
                 <img src={images.pagar1} alt='Tarjeta' className="h-14 mb-4"/>

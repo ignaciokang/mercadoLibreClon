@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Carrito from "./components/Carrito/Carrito";
 import { useState, useEffect } from "react";
 import Aclaracion from "./components/Aclaracion";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [carro, setCarro] = useState([]);
@@ -56,6 +57,7 @@ function App() {
       <Router basename="/mercadoLibreClon">
         <Header carro={carro}/>
         <Aclaracion/>
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />

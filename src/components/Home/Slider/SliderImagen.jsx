@@ -17,17 +17,6 @@ const SliderImagen = ({ slides }) => {
     console.log(current);
   };
 
-  // const Slider1 = () => {
-  //   setCurrent(0)
-  // };
-  
-  // const Slider2 = () => {
-  //   setCurrent(1)
-  // };
-  
-  // const Slider3 = () => {
-  //   setCurrent(2)
-  // };
 
   return (
     <section className="slider overflow-hidden">
