@@ -8,7 +8,7 @@ import Pagar from "../components/Home/Pagar";
 
 const Home = () => {
   return (
-      <div className="bg-FondoGris h-[300vh]">
+      <div className="bg-FondoGris">
         <SliderImagen slides={SliderData}/>
         <TarjetasBancarias/>
         <div className="w-4/5 mx-auto">
