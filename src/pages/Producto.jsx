@@ -33,7 +33,7 @@ const Producto = ({agregarCarrito}) => {
 
       console.log(prod)
         
-  }, []);
+  }, [params]);
 
  
 

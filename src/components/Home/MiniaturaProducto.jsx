@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const MiniaturaProducto = ({producto}) => {
   return (
     <div className="bg-white rounded-md shadow-sm shadow-gray-300 hover:shadow-md hover:shadow-gray-400">
-      <a href= {`/producto/${producto.id}`}>
+      <Link to= {`/producto/${producto.id}`}>
         <img src={producto.imagen} alt= 'Foto Producto' className="object-contain h-64 w-64 align-middle mx-auto"/>
         <hr/>
         <div className="mt-[1px] p-5 h-2/3">
@@ -12,7 +12,7 @@ const MiniaturaProducto = ({producto}) => {
             <p className="text-[16px] text-green-600 font-bold">Envío gratis</p>
             <p className="">{producto.titulo}</p>
         </div>
-      </a>
+      </Link>
     </div>
   )
 }

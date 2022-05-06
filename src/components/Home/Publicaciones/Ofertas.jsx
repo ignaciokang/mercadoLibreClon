@@ -8,6 +8,7 @@ const Ofertas = () => {
         <div className="grid grid-cols-5 space-x-4">
 
           {ListadoProductos.map((producto, id) => {
+            
                 return(
                   <MiniaturaProducto key={id} producto={producto}/>
                 )
